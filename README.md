@@ -69,6 +69,10 @@ npm run dev
 npm install @reduxjs/toolkit react-redux
 ```
 
+```bash
+npm install axios
+```
+
 ## Adding Redux to the application
 
 ### Remembering the key points to adding state management to the application
@@ -77,4 +81,5 @@ npm install @reduxjs/toolkit react-redux
 2. Connect the store or state to the application
 3. Create a provider to wrap the application
 4. Use the store or state in components.
+
 # Redux-TS-Store
