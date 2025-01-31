@@ -1,11 +1,15 @@
-import { Button } from "@mui/material";
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import  Products  from "./components/Products";
 
 function App() {
   return (
     <>
-      <h1>Redux TS app</h1>
-      <Button>Hello World</Button>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/products" element={<Products />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
