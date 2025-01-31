@@ -7,7 +7,7 @@ const Cart = () => {
   const { items, isOpen } = useAppSelector((state) => state.cart);
   const dispatch = useAppDispatch();
 
-  console.log("Items: ", items);
+//  console.log("Items: ", items);
 
   return (
     <>
@@ -24,9 +24,9 @@ const Cart = () => {
       >
         <Box sx={{ width: 400 }}>
           {items.map((item) => (
-            <ListItem key={item.id} >
-                <ListItemText primary={item.title} secondary={item.price}></ListItemText>
-                <ListItemText secondary={item.quantity} ></ListItemText>
+            <ListItem key={item.id}>
+              <ListItemText primary={item.title} secondary={item.price} />
+              <ListItemText secondary={item.quantity} />
             </ListItem>
           ))}
         </Box>

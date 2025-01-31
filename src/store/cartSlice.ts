@@ -11,14 +11,14 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      console.log("Add to cart: ", action.payload);
+      //console.log("Add to cart: ", action.payload);
       const existingItem = state.items.find(item => item.id === action.payload.id);
       // we have the item in the cart, we need to increase and if not, we add it
-      console.log("Existing item: ", existingItem);
+     // console.log("Existing item: ", existingItem);
       if (existingItem?.id) {
         existingItem.quantity++;
       } else {
-        console.log("We are going to push a new item");
+        //console.log("We are going to push a new item");
         state.items.push({ ...action.payload, quantity: 1 }); // we need to add quantity to it
       }
     },
