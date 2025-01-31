@@ -7,7 +7,7 @@ import { useAppDispatch } from "../hooks/hooks";
 const Products = () => {
   const products = useSelector((state: RootState) => state.products); // from our store, because we difined the type
   const dispatch = useAppDispatch();
-  console.log(products);
+  // console.log(products);
 
   useEffect(() => {
     dispatch(fetchProducts());
