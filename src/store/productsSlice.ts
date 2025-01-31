@@ -21,4 +21,6 @@ const productsSlice = createSlice({
     }
 })
 
+
+
 export default productsSlice.reducer; // now connect it to the store
